@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off" method="post" action="">
+        <h2>Register Form</h2>
+        <label>first name</label>
+        <input type="text" name="firstName" value="nouran" required> 
+        <br>
+        <label>last name</label>
+        <input type="text" name="lastName" autofocus minlength="3" maxlength="10" required>
+        <br>
+
+        <!-- nouran@hotmail.com -->
+        <input type="email" placeholder="enter email address" name="userEmail" autocomplete="off">
+        <br>
+        <input type="number" placeholder="age"  min="10" max="40">
+
+
+        <label for="idNum">ID Number</label>
+        <input type="text" id="idNum"  pattern="[0-9]{5}"  title="min = 4 numbers" name="idCard">
+
+        <br>
+        <label>Shipping area</label>
+        <input type="text" id="" value="Alex" disabled name="shippingArea">
+        <input type="text" value="cairo" readonly name="shippingArea2">
+
+        <br>
+
+        <label>Password</label>
+        <input type="password" name="userPassword" >
+
+        <br>
+
+        <label>Gender : </label>
+        <input type="radio" name="userGender" value="Male"> <span>Male</span>
+        <input type="radio" name="userGender" value="Female"> <label>Female</label>
+        <br>
+
+        <label> Tracks </label>
+        <input type="checkbox" name="tracks" value="front"> <span>Frontend</span>
+        <input type="checkbox" name="tracks" value="back"> <span>Backend</span>
+        <input type="checkbox" name="tracks" value="mob"> <span>Mobile</span>
+        <input type="checkbox" name="tracks" value="ccna"> <span>CCNA</span>
+        <hr>
+
+        <input type="checkbox" name="track1" value="front"> <span>Frontend</span>
+        <input type="checkbox" name="track2" value="back"> <span>Backend</span>
+        <input type="checkbox" name="track3" value="mob"> <span>Mobile</span>
+        <input type="checkbox" name="track4" value="ccna"> <span>CCNA</span>
+
+        <br>
+
+        <textarea rows="4" cols="40" placeholder="enter your message" name="message"></textarea>
+
+        <br>
+        <!-- <label>Choose your course</label> -->
+        <!-- <select name="course">
+            <option disabled selected>Choose your course</option>
+            <option value="front">Frontend - Angular</option>
+            <option value="back">Backend</option>
+            <option value="ccna">CCNA</option>
+        </select> -->
+        
+        <select name="ourCourses" multiple>
+            <option disabled selected>Choose your course</option>
+            <option value="front">Frontend - Angular</option>
+            <option value="back">Backend</option>
+            <option value="ccna">CCNA</option>
+            <option value="mob">Mobile</option>
+        </select>
+
+        <!-- datalist ==> search -->
+
+        <br>
+
+        <input type="file" name="file" multiple>
+
+
+
+        <br>
+
+
+        <input type="color" name="productColor">
+
+        <br>
+
+        <input type="date" name="dateOfBirth">
+        <input type="datetime-local" name="dateTime">
+        <input type="month" name="month">
+
+        <br>
+
+        <input type="range" name="range" value="100" min="50" max="250">
+
+
+
+
+
+
+       
+
+
+
+
+        <br>
+        <input type="submit" value="add user">
+        <button>Register</button>
+        <button type="button">Doesn't submit</button>
+        <button type="reset">Clear</button>
+    </form>
+    <hr>
+
+    <button>Register</button>
+
+    <!-- <span>Form</span> -->
+</body>
+</html>

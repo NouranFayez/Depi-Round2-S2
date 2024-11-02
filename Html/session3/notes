@@ -1,0 +1,17 @@
+-- label , input ==> inline elements
+-- form ==> block element
+
+
+-- input type ==> text , email , password , color , range , date.... , radio , checkbox , number , url , tel
+-- input attributes ==> max , min , maxlength , minlength , name , type , id , placeholder ,
+                        value , autocomplete , autofocus , disabled , readonly , mulitiple
+-- textarea ==> rows , cols , name , placeholder , value , required , disabled , readonly
+-- select ==> name , mulitiple
+
+
+
+------ search ---- 
+-- datalist 
+-- form attribute => action (search)
+-- input type file attribute ==> accept 
+ 
