@@ -1,0 +1,131 @@
+
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* global style */
+
+.bg-light{
+    background-color: #dfdfdf;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    margin: auto ;
+    width: 80%;
+
+}
+.custom-padding{
+    padding: 4% 0px;
+}
+.w-100{
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.w-75{
+    width: 75%;
+    background-color: aqua;
+}
+.w-25{
+    width: 25%;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+
+/* custom style */
+
+nav ul{
+    list-style: none;
+    float: right;
+    width: 39%;
+}
+nav h1{
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 7%;
+}
+#services-section .card{
+    width: 30%;
+    /* display: inline-block; */
+    float: left;
+
+}
+#services-section .card img{
+    width: 100%;
+}
+
+.custom-margin{
+    margin: 0% 5%;
+}
+
+#about-setion .card{
+
+}
+
+.bg-img{
+    background-image: url(../images/24701-nature-natural-beauty.jpg);
+    /* height: 600px; */
+    background-repeat: no-repeat;
+    background-color: black;
+    /* background-position-x: right; */
+    /* background-position-y: bottom; */
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    color: white;
+}
+
+.overlay{
+    /* red , green , blue */
+    background-color: rgba(0, 0, 0, 0.749);
+}
+
+.bg-img h3{
+    margin: 4% 0%;
+}
+
+.bg-img button{
+    border-top-color: forestgreen;
+    border-top-width: 7px;
+    border-top-style: solid;
+    border-left-color: red;
+    border-bottom-color: blue;
+    border-right: 3px solid brown;
+    border-bottom: 3px solid brown;
+    border-left: 3px solid brown;
+    border-top: 3px solid brown;
+
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 22px;
+    padding: 1%;
+    /* border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border-bottom-left-radius: 22px; */
+
+    border-radius: 7px;
+    padding: 5px 9px;
+    font-size: 19px;
+}
+
+
+/* border ==> color , width , style */
