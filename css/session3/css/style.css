@@ -1,0 +1,136 @@
+/* Reset Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* global style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.bg-light{
+    background-color: lightgray;
+}
+.bg-blue{
+    background-color: rgb(96, 200, 234);
+}
+.bg-gold{
+    background-color: goldenrod;
+}
+.bg-green{
+    background-color: lightgreen;
+}
+.custom-height{
+    height: 100vh;
+}
+.bg-dark{
+    background-color: black;
+}
+.text-white{
+    color: white;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.float-right{
+    float: right;
+}
+.custom-padding{
+    padding: 3% 0;
+}
+
+.position-relative{
+    position: relative;
+}
+
+/* custom style */
+header{
+    background-color: blue;
+    padding: 2%;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 99999999;
+}
+
+.card{
+    width: 40%;
+    /* border: 1px solid ; */
+    /* box-shadow: x-offset y-offset blur spread color; */
+    box-shadow: 0px 0px 8px 5px #cfcbcb;
+}
+.card .card-details{
+    padding: 2%;
+}
+.card img{
+    width: 100%;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.719);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.custom-btn{
+    background: darkgoldenrod;
+    color: white;
+    font-size: 14px;
+    padding: 1% 2%;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    margin: 3%;
+}
+.custom-btn:hover{
+    background-color: white;
+    color: darkgoldenrod;
+}
+.card h3{
+    display: none;
+}
+
+.card:hover h3{
+    color: blue;
+    display : block;
+}
+.custom-icon{
+    color: white;
+    /* margin: 2%; */
+    background: black;
+    padding: 1%;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    bottom: 5%;
+    position: fixed;
+    /* left: 94%; */
+    right: 2%;
+}
+
+
+/* position : static (default) , fixed , sticky , relative , absolute  */
+
+/* top , left , right , bottom , z-index */
