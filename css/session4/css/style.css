@@ -1,0 +1,119 @@
+/* Reset  style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Global style */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.bg-light {
+    background-color: rgb(231, 230, 230);
+}
+
+.custom-padding {
+    padding: 4% 0%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/* custom style */
+nav ul {
+    width: 30%;
+}
+
+nav h2 {
+    font-size: 40px;
+}
+
+.custom-flex {
+    /* flex-direction: ==> row (default) , row-reverse , column , column-reverse; */
+    /* flex-wrap ==> nowrap(default ) , wrap*/
+    flex-wrap: wrap;
+    /* justify-content ==> flex-start , flex-end , center , space-between , space-around , space-evenly */
+    /* justify-content: space-between; */
+    /* align-items ==> stretch(default) , flex-start , flex-end , center */
+    align-items: center;
+    /* align-content ==> flex-start , flex-end , center , space-between , space-around , space-evenly */
+    align-content: space-between;
+    height: 707px;
+    background-color: burlywood;
+}
+
+.card {
+    box-shadow: 0px 0px 6px 5px lightgray;
+    padding: 1%;
+    width: 29%;
+    background: darkgoldenrod;
+    /* text-transform: capitalize , uppercase , lowercase ; */
+    text-transform: capitalize;
+    /* color: white; */
+}
+
+.card p {
+    /* font-weight ==> lighter */
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 1.7;
+    /* text-shadow ==> x-shadow , y-shadow , blur , color  */
+    text-shadow: 0px -2px 2px black;
+    color: wheat;
+}
+
+.custom-hr {
+    width: 15%;
+    border: 2px solid #ff4500;
+    margin: 1% auto;
+}
+
+.hidden-element {
+    display: none;
+    /* hidden , visible(default) */
+    visibility: hidden;
+    /* 0 : 1 (default) */
+    opacity: 0;
+}
+
+.custom-card {
+    height: 83px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.custom-icon {
+    color: red;
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 3; */
+}
