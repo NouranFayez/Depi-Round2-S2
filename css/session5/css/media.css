@@ -1,0 +1,53 @@
+/* @rule  type condition */
+
+/* rule ==> @media */
+/* type ==> screen , print , speetch (screen reader) */
+/* consition ==> max-width , min-width , range */
+
+/* https://getbootstrap.com/docs/5.3/layout/breakpoints/ */
+
+/* screen ==> 390 */
+
+
+
+/* 0 : 575.98 */
+@media (max-width: 575.98px) { 
+    .card{
+        width: 48%;
+    }
+    .d-flex{
+        flex-wrap: wrap;
+    }
+
+}
+
+/* 0 : 400 */
+@media (max-width:400px){
+    .d-flex{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+
+}
+
+
+
+/* 600 : infinite */
+@media (min-width:600px){
+    .card{
+        background-color: aquamarine;
+    }
+}
+
+
+@media (min-width:700px) and (max-width:900px){
+    .card{
+        background-color: darkcyan;
+        color: white;
+    }
+    .display-none{
+        display: none;
+    }
+}
