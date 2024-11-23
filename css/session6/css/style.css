@@ -1,0 +1,175 @@
+/* Reset Style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Global style  */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.margin-top-bottom{
+    margin: 3% 0;
+}
+
+
+/* custom style */
+.card{
+    width: 30%;
+    padding: 1%;
+    box-shadow: 0px 0px 5px 6px lightgray;
+    /* transition:  ==> duration property timing-function; */
+    /* transition-duration: 3s ; */
+    height: 75px;
+    /* transition-property: height; */
+    /* transition-timing-function: ease; ease-in , ease-out , ease-in-out */
+    /* transition-timing-function: linear; */
+    /* transition-delay: 3s; */
+
+    /* transition: 1s height linear ; */
+    /* transition-delay: 3s; */
+    
+    transition: 1s all linear;
+
+}
+
+.card:hover{
+    background-color: darkgoldenrod;
+    width: 60%;
+    height: 400px;
+   
+}
+
+.transform-card{
+    width: 30%;
+    padding: 1%;
+    box-shadow: 0px 0px 5px 6px lightgray;
+    transition: 1s ;
+
+}
+.bg-light{
+    background-color: lightgray;
+}
+.transform-card:hover{
+    transform: translateX(50%) ;
+    transform: translateX(200px) ;
+    transform: translateX(-200px) ;
+    transform : translateY(50%);
+    transform: translateY(-200px);
+    transform:translate(50% , 100%);
+    transform: rotate(360deg);
+    transform: skewX(40deg);
+    transform: skewY(40deg);
+    transform: scaleX(1.5);
+    transform: scaleX(.5);
+    transform: scaleX(0);
+    transform: scaleX(1);
+    transform: scaleY(1.5);
+    transform: scaleY(0);
+    transform: scale(1.5);
+    /* skewY ==> 50deg */
+    /* matrix ==> scaleX , skewY , skewX , scaleY , translateX , translateY */
+    transform : matrix(1.5 , 0.5 , 0 , 0.5 , 100 , 200 );
+
+}
+
+.custom-transform{
+    width: 30%;
+    box-shadow: 0px 0px 5px 6px lightgray;
+  
+}
+.custom-transform img{
+    width: 100%;
+    transition: 1s;
+}
+
+.custom-transform:hover img{
+    transform: rotate(20deg) scale(1.5);
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.custom-filter{
+    width: 30%;
+    box-shadow: 0px 0px 5px 6px lightgray;
+}
+
+.custom-filter img{
+    width: 100%;
+    transition: 1s;
+}
+
+.custom-filter:hover img{
+    filter: blur(5px);
+    filter: brightness(1.5);
+    filter: opacity(0.5);
+    filter: contrast(2);
+    filter: grayscale(1);
+    /* filter: drop-shadow() ==> png; */
+}
+
+
+.custom-animation{
+    width: 60px;
+    height: 60px;
+    background-color: lightcoral;
+    animation-name: changeBgColor ;
+    animation-duration: 7s;
+    /* animation-timing-function: ease (default) , linear , ease-in , ease-out , ease-in-out....; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+    animation-iteration-count: 2 ;
+    /* normal : 0 - 100 */
+    /* reverse : 100 - 0 */
+    /* alternate 0 - 100 // 100 - 0 */
+    /* alternate-reverse 100 - 0 // 0 - 100 */
+    animation-direction:alternate ;
+    animation-direction:alternate-reverse ;
+
+    animation-delay: 3s;
+    /* animation==> fill-mode (search) */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: changeBgColor 5s linear 2s 2 alternate-reverse;
+}
+
+@keyframes changeBgColor {
+        /* from{
+            background-color: darkgoldenrod;
+        }
+        to{
+            background-color: black;
+        } */
+
+        0%{
+            background-color: lightseagreen;
+        }
+        25%{
+            background-color: darkkhaki;
+            transform: translateX(200px);
+            border: 5px solid blue;
+        }
+        50%{
+            background-color: darkred;
+            transform: translate(200px , 200px);
+        }
+        75%{
+            background-color: rgb(179, 179, 17);
+            transform: translate(0px , 200px) rotate(360deg);
+        }
+        100%{
+            background-color: blue;
+        }
+}
+
+
+/* https://css-tricks.com/almanac/properties/t/transform/ */
+
