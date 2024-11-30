@@ -1,0 +1,26 @@
+-- opertors ==> -- Assignment Operator (shortcut) ==> += -= /= *= %=
+                -- comparison Operator ==> > , >= , < , <= , == , === , != , !==
+                -- unary operator ==> typeof
+                -- logical Operator ==> && || !
+                -- ternary operator ==> (condition) ? true : false
+
+
+-- if condition 
+-- if(condition){
+    true code .....
+}
+else {
+    false code ....
+}
+
+-- switch case 
+
+-- looping ==> for , while , do-while (search)
+
+-- function ==> block of code 
+                name 
+                logic
+                parameters
+                return 
+                call function
+
