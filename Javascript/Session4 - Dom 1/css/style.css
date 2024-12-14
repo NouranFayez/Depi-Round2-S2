@@ -1,0 +1,9 @@
+.custom-element-style{
+    background-color: teal;
+    color: white;
+    padding: 2%;
+    width: 40%;
+    margin: 3%;
+    border: 2px solid;
+    font-size: 20px;
+}
