@@ -1,0 +1,28 @@
+button{
+    border-radius: 25px;
+    padding: 1% 2%;
+    background-color: teal;
+    font-size: 20px;
+    color: white;
+    margin: 4%;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+button span{
+    width: 30px;
+    height: 80px;
+    display: inline-block;
+    background-color: #0000008f;
+    position: absolute;
+    left: -50%;
+    bottom: -55%;
+    transform: rotate(45deg);
+    transition: 3s;
+
+}
+button:hover span{
+    left: 140%;
+}
