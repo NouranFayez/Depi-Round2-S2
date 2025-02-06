@@ -1,0 +1,7 @@
+-- install node.js
+-- npm i -g @angular/cli
+-- create new app ==> ng new appName --standalone=false
+-- run my app ==> ng serve -open , ng s -o gbhvgh
+-- create component ==> ng generate component pages/index
+-- install ==> npm i bootstrap 
+-- link css/js files in angular.json
