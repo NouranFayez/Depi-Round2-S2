@@ -1,0 +1,55 @@
+<!-- <div class="container">
+
+</div> -->
+<h1>{{title}}</h1>
+<h3 class="text-danger">{{num}}</h3>
+<h4>{{100 + 50}}</h4>
+<h3 class="text-primary">{{handleFunction()}}</h3>
+<h5 class="text-warning">{{handleMax("20" ,30 , 100)}}</h5>
+
+<!-- Property binding -->
+<div class="col-6">
+    <input [type]="inputType" [class]="inputClass"
+     [placeholder]="placeholderInput" >
+</div>
+
+<p class="text-success" [innerText]="content"></p>
+
+<div [innerHTML]="element" class="alert alert-primary">
+</div>
+
+<button type="button" class="btn btn-primary" 
+[attr.data-bs-toggle]="btnAction" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+
+  <button class="btn btn-danger" (click)="handleClick()">Click here</button>
+  <div class="col-6">
+    <!-- template reference -->
+      <input type="text" #nameInput (input)="handleInput($event , nameInput)"
+      (keyup.enter)="handleEnterKey()"
+       class="form-control" placeholder="enter your name" >
+    <h3 class="text-info">{{inputValue}}</h3>
+  </div>
+
+
+  <div class="row">
+    <div class="col-6">
+        <input type="email" class="form-control" [(ngModel)]="model.email"
+         placeholder="enter your email">
+    </div>
+    <div class="col-6">
+        <input type="password" class="form-control" [(ngModel)]="model.password"  
+        placeholder="enter your password">
+    </div>
+    <div class="col-6">
+        <textarea class="form-control" [(ngModel)]="model.content"  
+        placeholder="enter your password"></textarea>
+    </div>
+    <div class="col-12">
+        <button (click)="handleBtnClick()">Login</button>
+    </div>
+  </div>
+
+  <h3 class="text-success">{{emailInput}}</h3>
