@@ -1,0 +1,20 @@
+<h3>{{currentDate}}</h3>
+<h3>{{currentDate | date}}</h3>
+<h3>{{currentDate | date : 'short'}}</h3>
+<h3>{{currentDate | date : 'fullDate'}}</h3>
+<h3>{{currentDate | date : 'dd - MM - YYYY'}}</h3>
+<h3>{{currentDate | date : 'dd,MM,YYYY'}}</h3>
+
+<h5 class="text-primary">{{'lorem ipsum dolor sit amet.' | uppercase}}</h5>
+
+<h5 class="text-danger">{{title | lowercase}}</h5>
+
+<h4 class="text-success">
+    {{obj | json}}
+</h4>
+
+<h5>{{title | slice : 0 : 7}}</h5>
+<h5 class="text-danger">{{title | slice : -6}}</h5>
+<!-- <h5 class="text-danger">{{title |}}</h5> -->
+
+<!-- currency , number  -->

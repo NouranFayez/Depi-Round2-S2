@@ -1,0 +1,9 @@
+== directives ==> structure directives - *ngIf
+                                         *ngFor
+                                         ngSwitch
+
+
+== pipes ==> date , lowercase , uppercase , json , slice ==> (currency , number , percent)   
+
+==> communication between components ==> parent send data child ==> @Input()
+                                         child send data to parent ==> @Output()
