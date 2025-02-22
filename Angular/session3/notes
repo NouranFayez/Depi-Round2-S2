@@ -1,0 +1,7 @@
+-- directive ==> attributes directive ==> [(ngModel)] -- two way binding
+                                          [ngClass]
+                                          [ngStyle]
+
+             ==> structure directives ==>  *ngIf
+                                           *ngFor 
+                                           *ngSwitch                           

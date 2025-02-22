@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-xl-3" 
+    *ngFor="let user of users ; let i = index ; let f = first ; let lastItem = last ;
+     let count = count ; let odd = odd ; let evenItem = even">
+        <div class="card border-4" [ngClass]="{'border-primary' : evenItem ,
+         'border-danger' : odd , 'bg-warning' : f}">
+            <div class="card-body" >
+                <h2>Name : {{user.name}}</h2>
+                <p>Address :{{user.address}}</p>
+                <h5>Index = {{i}}</h5>
+                <h5>first = {{f}}</h5>
+                <h5>last = {{lastItem}}</h5>
+                <h5>count = {{count}}</h5>
+                <h5>even = {{evenItem}}</h5>
+                <h5>odd = {{odd}}</h5>
+            </div>
+        </div>
+    </div>
+   
+</div>

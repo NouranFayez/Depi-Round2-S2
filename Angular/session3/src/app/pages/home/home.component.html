@@ -1,0 +1,37 @@
+<h1 [ngClass]="className">Angular</h1>
+<!-- text-primary ==> classFlag = false
+text-success ==> classFlag = true -->
+<h3 [ngClass]="(classFlag) ?  'text-success' : 'text-primary' ">Angular session 3</h3>
+
+<button class="btn btn-danger" (click)="classFlag = !classFlag">Change text color</button>
+
+<div class="alert" [ngClass]="{'alert-danger' : classFlag , 'alert-secondary' : !classFlag}">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, voluptates!
+</div>
+
+<div [ngClass]="[customBgColor , customBorder , customPadding]">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, nulla.</div>
+
+ <div [ngStyle]="{'background-color' : customStyle }" style="color : red">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, cupiditate.
+ </div>   
+ <!-- <button class="btn btn-">Change style</button> -->
+<hr>
+
+
+ <div class="alert alert-danger"
+  *ngIf="arr.length > 2  && classFlag && customPadding == 'p-5' ; then trueCondition ; else falseCondition ">
+    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, iusto.</h4>
+ </div>
+
+
+ <ng-template #trueCondition>
+    <h3 class="bg-primary">Inside Ng Template ==> true condition</h3>
+ </ng-template>
+
+ <ng-template #falseCondition>
+     <div class="alert alert-primary" >
+        <h3>in false condition</h3>
+     </div>
+
+ </ng-template>
