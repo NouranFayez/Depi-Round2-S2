@@ -14,12 +14,19 @@ export class SinglePostComponent {
      private global : GlobalService){
   }
   singlePost : any
+  posts:any[] = []
   ngOnInit(){
-   console.log( this.activated.snapshot.paramMap.get('id'))
+  //  console.log( this.activated.snapshot.paramMap.get('id'))
    const postId =  this.activated.snapshot.paramMap.get('id')
-   this.global.getSinglePost(postId).subscribe(res=>{
-    console.log(res)
-    this.singlePost = res[0]
+   this.activated.paramMap.subscribe(param=>{
+    console.log(param.get('id'))
+    this.global.getSinglePost(param.get('id')).subscribe(res=>{
+     console.log(res)
+     this.singlePost = res[0]
+    })
+   })
+   this.global.getPosts().subscribe(res=>{
+    this.posts = res
    })
   }
 

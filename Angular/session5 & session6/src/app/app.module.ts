@@ -9,6 +9,8 @@ import { PostsComponent } from './pages/posts/posts.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { SinglePostComponent } from './pages/single-post/single-post.component';
     HomeComponent,
     PostsComponent,
     AboutComponent,
-    SinglePostComponent
+    SinglePostComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
     // HttpClientModule
   ],
   providers: [
