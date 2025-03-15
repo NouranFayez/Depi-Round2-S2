@@ -3,19 +3,22 @@
 
 <div class="container">
     <form class="row gy-3 mt-3" #loginForm="ngForm"  (ngSubmit)="handleSubmit(loginForm)" >
-        <div class="col-12">
-            <div class="alert alert-danger">
+        <div class="col-12" >
+            <!-- <div class="alert alert-danger">
                 <h6>submitted {{loginForm.submitted}}</h6>
                 <h6>dirty {{loginForm.dirty}}</h6>
                 <h6>touched {{loginForm.touched}}</h6>
                 <h6>valid {{loginForm.valid}}</h6>
                 <h6>invalid {{loginForm.invalid}}</h6>
                 <h6>values {{loginForm.value | json}}</h6>
+            </div> -->
+            <div class="alert alert-danger" *ngIf="errorMsg">
+                {{errorMsg}}
             </div>
         </div>
         <div class="col-6">
             <!-- validation ==> required , email -->
-            <input type="email" class="form-control"
+            <input type="email" class="form-control" (input)="errorMsg = null"
              [(ngModel)]="userLogin.email" name="email" #userEmail="ngModel" required email minlength="3"  placeholder="enter your email">
              <div class="alert alert-danger" *ngIf="loginForm.submitted && userEmail.invalid">
                 <div *ngIf="userEmail.errors?.['required']">
@@ -36,9 +39,10 @@
                 <h6>errors {{userEmail.errors | json}}</h6>
              </div> -->
         </div>
-        <div class="col-6">
+       
+         <div class="col-6">
             <input type="password" class="form-control" #userPassword="ngModel"
-             [(ngModel)]="userLogin.password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+             [(ngModel)]="userLogin.password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}"
               placeholder="enter your password">
             <div class="alert alert-danger" *ngIf="loginForm.submitted && userPassword.invalid">
                 <div *ngIf="userPassword.errors?.['pattern']">

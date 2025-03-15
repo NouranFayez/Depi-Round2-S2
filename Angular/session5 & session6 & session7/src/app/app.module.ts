@@ -11,6 +11,10 @@ import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { SearchResultComponent } from './pages/search-result/search-result.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +24,16 @@ import { FormsModule } from '@angular/forms';
     PostsComponent,
     AboutComponent,
     SinglePostComponent,
-    LoginComponent
+    LoginComponent,
+    SearchResultComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
     // HttpClientModule
   ],
   providers: [

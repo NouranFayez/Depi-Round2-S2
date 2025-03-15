@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center" *ngIf="!isLoaded">
+            <img src="loading.webp" alt="">
+        </div>
+    
+        <ng-container *ngIf="isLoaded">
+            <div class="col-4" *ngFor="let item of gallery" >
+                <div class="card">
+                    <img src="{{item.thumbnailUrl}}" class="card-top-img" alt="">
+                    <div class="card-body">
+                        <h4>{{item.title}}</h4>
+                    </div>
+                </div>
+            </div>
+
+        </ng-container>
+    </div>
+</div>
