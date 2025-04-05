@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <ul class="list-unstyled"> 
+                <!-- www.abs.com/user-details 
+                www.abs.com/profile/user-details -->
+                <li routerLink="/profile/user-details">user profile</li>
+                <li routerLink="/profile/user-image">user image</li>
+                <!-- <li routerLink="user-address">user address</li> -->
+                <li routerLink="/profile/user-address">user address</li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+<!-- ng g module admin --route dashboard --module app.module -->
