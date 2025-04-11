@@ -10,7 +10,7 @@ import { GlobalService } from './services/global.service';
 export class AppComponent {
   title = 'session8';
 
-  constructor(private global : GlobalService){}
+  constructor(public global : GlobalService){}
 
   ngOnInit(){
     // this.global.getProfile().

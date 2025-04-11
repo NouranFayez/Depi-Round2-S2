@@ -11,6 +11,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { authInterceptor } from './interceptors/auth.interceptor';
+import { ChildComponent } from './pages/child/child.component';
+import { ParentComponent } from './pages/parent/parent.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import { SingleCategoryComponent } from './pages/single-category/single-category.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { authInterceptor } from './interceptors/auth.interceptor';
     IndexComponent,
     LoginComponent,
     ProductsComponent,
-    ProfileComponent
+    ProfileComponent,
+    ChildComponent,
+    ParentComponent,
+    CategoriesComponent,
+    SingleCategoryComponent
   ],
   imports: [
     BrowserModule,

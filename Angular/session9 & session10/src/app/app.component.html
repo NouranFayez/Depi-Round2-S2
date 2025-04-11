@@ -1,0 +1,6 @@
+
+<app-navbar *ngIf="global.isAvailable"></app-navbar>
+
+<h2 class="text-success" *ngIf="global.isAvailable" routerLink="/profile">Profile</h2>
+
+<router-outlet />

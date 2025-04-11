@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GlobalService {
+  isAvailable = true
 
   constructor(private http : HttpClient ) { }
 
