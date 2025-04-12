@@ -1,0 +1,21 @@
+<div class="row" #productsContainer>
+    <div class="col-4" *ngFor="let item of products?.data | paginate: { id: 'products',
+    itemsPerPage: pageSize,
+    currentPage: p,
+    totalItems: total }">
+        <div class="card">
+            <div class="card-body">
+                <h2>{{item.name}}</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae fugit aut iusto voluptas voluptatum
+                    obcaecati veniam placeat quas saepe tempora!
+                </p>
+            </div>
+        </div>
+    </div>
+    <pagination-controls id="products" (pageChange)="pageChanged($event)" (pageBoundsCorrection)="pageChanged($event)"
+        [maxSize]="10" [directionLinks]="true" [autoHide]="true" [responsive]="true" previousLabel="Previous"
+        nextLabel="Next" screenReaderPaginationLabel="Pagination" screenReaderPageLabel="page"
+        screenReaderCurrentLabel="You're on page">
+    </pagination-controls>
+</div>
