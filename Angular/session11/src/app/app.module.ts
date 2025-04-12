@@ -7,10 +7,19 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { IndexComponent } from './pages/index/index.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { provideHttpClient } from '@angular/common/http';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { PostsComponent } from './pages/posts/posts.component';
 
 import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
+import {TranslateModule , TranslateLoader } from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+// Import library module
+import { NgxSpinnerModule } from "ngx-spinner";
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -24,7 +33,16 @@ import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient]
+      }
+  })
   ],
   providers: [
     provideHttpClient()

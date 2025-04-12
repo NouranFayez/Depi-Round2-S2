@@ -7,16 +7,20 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/">{{'home' | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/posts" >Posts</a>
+            <a class="nav-link" routerLink="/posts" >{{'posts' | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/products" >Products</a>
+            <a class="nav-link" routerLink="/products" >{{'products' | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/contact" >Contact us</a>
+            <a class="nav-link" routerLink="/contact" >{{'contact' | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-sm btn-primary" (click)="handleLang('ar')">Change To arabic</button>
+            <button class="btn btn-sm btn-danger"  (click)="handleLang('en')">Change To English</button>
           </li>
         
         </ul>

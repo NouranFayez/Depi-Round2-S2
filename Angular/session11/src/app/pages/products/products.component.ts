@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-products',
@@ -14,10 +15,11 @@ export class ProductsComponent {
   total : any
 
   @ViewChild('productsContainer') productsSection! :ElementRef; 
-    constructor(private global : GlobalService){
+    constructor(private global : GlobalService , private spinner : NgxSpinnerService){
 
     }
     ngOnInit(){
+      
     this.productsList(1 , 10)
     }
 
@@ -29,10 +31,15 @@ export class ProductsComponent {
 
 
     productsList(page:any , limit:any){
+      this.spinner.show()
       this.global.getProducts(page , limit).subscribe(res=>{
         // this.products = res.data
         this.products = res
         this.total = res.count
+      },()=>{
+
+      },()=>{
+        this.spinner.hide()
       })
     }
 
